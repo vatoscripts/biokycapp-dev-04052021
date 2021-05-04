@@ -29,13 +29,11 @@ spec:
       initContainers:
       - name: install
         image: busybox
-
         resources:
           requests:
             memory: "500Mi"
         limits:
           memory: "1000Mi"
-          
         volumeMounts:
         - name: dir
           mountPath: /source
