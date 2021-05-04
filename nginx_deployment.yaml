@@ -30,11 +30,7 @@ spec:
       containers:
       - name: nginx
         image: nginx
-        resources:
-          requests:
-            memory: "500Mi"
-        limits:
-          memory: "1000Mi"
+        
         volumeMounts:
         - name: dir
           mountPath: /source
